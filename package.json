@@ -1,0 +1,61 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "prepare": "husky install"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/pro-layout": "^6.5.0",
+    "@designable/formily-antd": "^1.0.0-beta.45",
+    "@formily/antd": "^2.0.9",
+    "@formily/core": "^2.0.9",
+    "@formily/react": "^2.0.9",
+    "@handsontable/react": "^12.2.0",
+    "@monaco-editor/react": "^4.4.6",
+    "@react-pdf-viewer/core": "^3.9.0",
+    "@react-pdf-viewer/default-layout": "^3.9.0",
+    "@react-pdf-viewer/locales": "^1.0.0",
+    "antd": "^4.18.6",
+    "fr-generator": "^2.8.4",
+    "handsontable": "^12.2.0",
+    "idb-keyval": "^6.2.0",
+    "localforage": "^1.10.0",
+    "moment": "^2.29.1",
+    "monaco-editor": "^0.34.1",
+    "pdfjs-dist": "^3.1.81",
+    "react": "17.x",
+    "react-dom": "17.x",
+    "three": "^0.148.0",
+    "umi": "^3.5.20"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/three": "^0.146.0",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.5.20",
+    "husky": "^8.0.1",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}
