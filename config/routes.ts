@@ -3,6 +3,7 @@ export default [
   { path: '/login', exact: true, component:'@/pages/login' },
   { path: '/register', exact: true, component: '@/pages/user/register' },
   { path: '/modify', exact: true, component: '@/pages/user/modify' },
+  { path: '/list-render-demo', exact: true, component: '@/pages/list-render-demo' },
   { path: '/home', component: '@/pages/portal',
     routes: [
       { path: '/home/editor', component: '@/pages/lowcode' },
