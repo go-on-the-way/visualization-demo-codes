@@ -7,6 +7,7 @@ interface WleiRenderPropType {
     formChildRender?:Function
     styles?:{ [key:string]:any },
     children?:any,
+    formConfig?:any,
     [key:string]:any
 }
 

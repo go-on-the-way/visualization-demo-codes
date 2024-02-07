@@ -1,9 +1,8 @@
-import React,{ forwardRef, useImperativeHandle, useRef, useEffect } from 'react';
+import { forwardRef, useEffect } from 'react';
 import { createForm } from '@formily/core'
 import { createSchemaField, FormProvider } from '@formily/react'
-import { Form, FormItem, Input, Password } from '@formily/antd';
-import * as ICONS from '@ant-design/icons';
-import { getSchema } from './renderUtil'
+import { Form } from '@formily/antd';
+import { getSchema, getFormConfig, getComponents, getScope } from './renderUtil'
 import { WleiRenderPropType } from '@/types/component.type'
 
 function wleiFormRender({ 
@@ -15,24 +14,12 @@ function wleiFormRender({
     formProps,
     onEffect,
     styles,
-    ...otherProps 
+    formConfig,
 }:WleiRenderPropType,ref:any) {
-    const form = createForm({
-        validateFirst: true,
-    })
+    const form = createForm(getFormConfig(formConfig))
     const SchemaField = createSchemaField({
-        components:{
-            FormItem,
-            Input,
-            Password,
-            ...components
-        },
-        scope:{
-            icon(name:string) {
-                return React.createElement(ICONS[name]);
-            },
-            ...scope
-        }
+        components:getComponents(components),
+        scope:getScope(scope)
     })
     useEffect(()=>{
         onEffect?.(form)
