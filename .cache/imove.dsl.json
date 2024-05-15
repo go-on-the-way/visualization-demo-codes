@@ -1,0 +1,681 @@
+{
+  "cells": [
+    {
+      "position": {
+        "x": 460,
+        "y": 50
+      },
+      "size": {
+        "width": 80,
+        "height": 40
+      },
+      "visible": true,
+      "shape": "imove-behavior",
+      "data": {
+        "label": "处理",
+        "configSchema": "{\n  \"schema\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"textarea_FyaArd\": {\n        \"title\": \"Textarea\",\n        \"type\": \"string\",\n        \"format\": \"textarea\",\n        \"description\": \"文本编辑框\"\n      },\n      \"select_jrGW8n\": {\n        \"title\": \"Select\",\n        \"type\": \"string\",\n        \"enum\": [\n          \"a\",\n          \"b\",\n          \"c\"\n        ],\n        \"enumNames\": [\n          \"早\",\n          \"中\",\n          \"晚\"\n        ],\n        \"description\": \"下拉单选\"\n      }\n    },\n    \"ui:displayType\": \"row\",\n    \"ui:showDescIcon\": true\n  },\n  \"displayType\": \"row\",\n  \"showDescIcon\": true\n}",
+        "configData": {},
+        "dependencies": "{\n  \n}",
+        "code": "export default async function(ctx) {\n  console.log('1212')\n  return true\n}"
+      },
+      "ports": {
+        "groups": {
+          "top": {
+            "position": "top",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "right": {
+            "position": "right",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "bottom": {
+            "position": "bottom",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "left": {
+            "position": "left",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "id": "top",
+            "group": "top"
+          },
+          {
+            "id": "right",
+            "group": "right"
+          },
+          {
+            "id": "bottom",
+            "group": "bottom"
+          },
+          {
+            "id": "left",
+            "group": "left"
+          }
+        ]
+      },
+      "id": "81e87610-c749-4667-8382-00c62be30e2b",
+      "zIndex": 1
+    },
+    {
+      "position": {
+        "x": 56,
+        "y": 30
+      },
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "visible": true,
+      "shape": "imove-start",
+      "data": {
+        "label": "开始",
+        "configSchema": "{\n  \"schema\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"input_1aWdPV\": {\n        \"title\": \"Input\",\n        \"type\": \"string\",\n        \"description\": \"输入框\"\n      },\n      \"dateRangeSelect_mPNhq_\": {\n        \"title\": \"DateRange\",\n        \"type\": \"range\",\n        \"format\": \"date\",\n        \"description\": \"日期范围选择\"\n      }\n    },\n    \"ui:displayType\": \"row\",\n    \"ui:showDescIcon\": true\n  },\n  \"displayType\": \"row\",\n  \"showDescIcon\": true\n}",
+        "configData": {},
+        "trigger": "start",
+        "dependencies": "{\n  \n}",
+        "code": "export default async function(ctx) {\n  \n}"
+      },
+      "ports": {
+        "groups": {
+          "top": {
+            "position": "top",
+            "zIndex": 10,
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "right": {
+            "position": "right",
+            "zIndex": 10,
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "bottom": {
+            "position": "bottom",
+            "zIndex": 10,
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "left": {
+            "position": "left",
+            "zIndex": 10,
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "id": "top",
+            "group": "top"
+          },
+          {
+            "id": "right",
+            "group": "right"
+          },
+          {
+            "id": "bottom",
+            "group": "bottom"
+          },
+          {
+            "id": "left",
+            "group": "left"
+          }
+        ]
+      },
+      "id": "de868d18-9ec0-4dac-abbe-5cb9e3c20e2f",
+      "zIndex": 2
+    },
+    {
+      "position": {
+        "x": 246,
+        "y": 50
+      },
+      "size": {
+        "width": 80,
+        "height": 40
+      },
+      "visible": true,
+      "shape": "imove-branch",
+      "data": {
+        "label": "判断",
+        "configSchema": "{\"schema\":{\"type\":\"object\",\"properties\":{\"input_MudoMs\":{\"title\":\"Input\",\"type\":\"string\",\"description\":\"输入框\"}},\"ui:displayType\":\"row\",\"ui:showDescIcon\":true},\"displayType\":\"row\",\"showDescIcon\":true}",
+        "configData": {},
+        "dependencies": "{\n  \n}",
+        "ports": {
+          "right": {
+            "condition": "true"
+          },
+          "bottom": {
+            "condition": "false"
+          }
+        },
+        "code": "export default async function(ctx) {\n  console.log(ctx)\n  return true;\n}"
+      },
+      "ports": {
+        "groups": {
+          "top": {
+            "position": "top",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "right": {
+            "position": "right",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            },
+            "label": {
+              "position": "right"
+            },
+            "zIndex": 999999999
+          },
+          "bottom": {
+            "position": "bottom",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            },
+            "label": {
+              "position": "bottom"
+            },
+            "zIndex": 999999999
+          },
+          "left": {
+            "position": "left",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "id": "top",
+            "group": "top",
+            "attrs": {
+              "text": {
+                "text": ""
+              }
+            }
+          },
+          {
+            "id": "right",
+            "group": "right",
+            "attrs": {
+              "text": {
+                "text": ""
+              }
+            }
+          },
+          {
+            "id": "bottom",
+            "group": "bottom",
+            "attrs": {
+              "text": {
+                "text": ""
+              }
+            }
+          },
+          {
+            "id": "left",
+            "group": "left"
+          }
+        ]
+      },
+      "id": "a6da6684-96c8-4595-bec6-a94122b61e30",
+      "zIndex": 3
+    },
+    {
+      "shape": "edge",
+      "attrs": {
+        "line": {
+          "strokeWidth": "2px"
+        }
+      },
+      "id": "cbcbd0ea-4a2a-4d2a-8135-7b4b7d7ec50d",
+      "zIndex": 4,
+      "source": {
+        "cell": "de868d18-9ec0-4dac-abbe-5cb9e3c20e2f",
+        "port": "right"
+      },
+      "target": {
+        "cell": "a6da6684-96c8-4595-bec6-a94122b61e30",
+        "port": "left"
+      }
+    },
+    {
+      "shape": "edge",
+      "attrs": {
+        "line": {
+          "strokeWidth": "2px"
+        }
+      },
+      "id": "ea10b718-1c66-4a3d-b29c-b0b20e6bba11",
+      "zIndex": 5,
+      "labels": [
+        {
+          "attrs": {
+            "label": {
+              "text": "是"
+            }
+          }
+        }
+      ],
+      "source": {
+        "cell": "a6da6684-96c8-4595-bec6-a94122b61e30",
+        "port": "right"
+      },
+      "target": {
+        "cell": "81e87610-c749-4667-8382-00c62be30e2b",
+        "port": "left"
+      }
+    },
+    {
+      "position": {
+        "x": 246,
+        "y": 270
+      },
+      "size": {
+        "width": 80,
+        "height": 40
+      },
+      "visible": true,
+      "shape": "imove-behavior",
+      "data": {
+        "label": "处理",
+        "configSchema": "{\n  \"schema\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"textarea_rdO5RK\": {\n        \"title\": \"Textarea\",\n        \"type\": \"string\",\n        \"format\": \"textarea\",\n        \"description\": \"文本编辑框\"\n      }\n    },\n    \"ui:displayType\": \"row\",\n    \"ui:showDescIcon\": true\n  },\n  \"displayType\": \"row\",\n  \"showDescIcon\": true\n}",
+        "configData": {},
+        "dependencies": "{\n  \n}",
+        "code": "export default async function(ctx) {\n  console.log('test')\n}"
+      },
+      "ports": {
+        "groups": {
+          "top": {
+            "position": "top",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "right": {
+            "position": "right",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "bottom": {
+            "position": "bottom",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "left": {
+            "position": "left",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "id": "top",
+            "group": "top"
+          },
+          {
+            "id": "right",
+            "group": "right"
+          },
+          {
+            "id": "bottom",
+            "group": "bottom"
+          },
+          {
+            "id": "left",
+            "group": "left"
+          }
+        ]
+      },
+      "id": "c538d496-eeaa-4e95-9752-2a5d0c168e13",
+      "zIndex": 6
+    },
+    {
+      "shape": "edge",
+      "attrs": {
+        "line": {
+          "strokeWidth": "2px"
+        }
+      },
+      "id": "4ffa7a28-a339-4686-81d8-20be9d62de14",
+      "zIndex": 7,
+      "labels": [
+        {
+          "attrs": {
+            "label": {
+              "text": "否"
+            }
+          }
+        }
+      ],
+      "source": {
+        "cell": "a6da6684-96c8-4595-bec6-a94122b61e30",
+        "port": "bottom"
+      },
+      "target": {
+        "cell": "c538d496-eeaa-4e95-9752-2a5d0c168e13",
+        "port": "top"
+      }
+    },
+    {
+      "position": {
+        "x": 56,
+        "y": 380
+      },
+      "size": {
+        "width": 100,
+        "height": 40
+      },
+      "attrs": {
+        "label": {
+          "text": "在线运行测试"
+        }
+      },
+      "visible": true,
+      "shape": "imove-behavior",
+      "data": {
+        "label": "在线运行测试",
+        "configSchema": "{\n  \"schema\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"input_CCw1sQ\": {\n        \"title\": \"Input\",\n        \"type\": \"string\",\n        \"description\": \"输入框\"\n      },\n      \"allBoolean_fREQq-\": {\n        \"title\": \"Switch\",\n        \"type\": \"boolean\",\n        \"ui:widget\": \"switch\",\n        \"description\": \"开关控制\"\n      }\n    },\n    \"ui:displayType\": \"row\",\n    \"ui:showDescIcon\": true\n  },\n  \"displayType\": \"row\",\n  \"showDescIcon\": true\n}",
+        "configData": {},
+        "dependencies": "{\n  \"lodash.get\": \"4.4.2\"\n}",
+        "code": "import fpget from 'lodash.get';\n\nexport default async function(ctx) {\n  const obj = {a: {b: 'hello imove~'}};\n  console.log(fpget(obj, 'a.b'));\n  return ctx.getPipe();\n}"
+      },
+      "ports": {
+        "groups": {
+          "top": {
+            "position": "top",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "right": {
+            "position": "right",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "bottom": {
+            "position": "bottom",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          },
+          "left": {
+            "position": "left",
+            "attrs": {
+              "circle": {
+                "r": 3,
+                "magnet": true,
+                "stroke": "#666",
+                "strokeWidth": 1,
+                "fill": "#fff"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "id": "top",
+            "group": "top"
+          },
+          {
+            "id": "right",
+            "group": "right"
+          },
+          {
+            "id": "bottom",
+            "group": "bottom"
+          },
+          {
+            "id": "left",
+            "group": "left"
+          }
+        ]
+      },
+      "id": "1d174369-929b-4bd5-8841-f271399c4a4f",
+      "zIndex": 9
+    },
+    {
+      "position": {
+        "x": 605,
+        "y": 55
+      },
+      "size": {
+        "width": 60,
+        "height": 30
+      },
+      "visible": true,
+      "shape": "imove-behavior",
+      "data": {
+        "label": "处理",
+        "configSchema": "{\n  \n}",
+        "configData": {},
+        "dependencies": "{\n  \n}",
+        "code": "export default async function(ctx) {\n  console.log('last 12345')\n}"
+      },
+      "ports": {
+        "groups": {
+          "top": {
+            "position": "top",
+            "attrs": {
+              "circle": {
+                "r": 2.5,
+                "magnet": true,
+                "stroke": "#4E68A3",
+                "strokeWidth": 2,
+                "fill": "#fff"
+              }
+            }
+          },
+          "right": {
+            "position": "right",
+            "attrs": {
+              "circle": {
+                "r": 2.5,
+                "magnet": true,
+                "stroke": "#4E68A3",
+                "strokeWidth": 2,
+                "fill": "#fff"
+              }
+            }
+          },
+          "bottom": {
+            "position": "bottom",
+            "attrs": {
+              "circle": {
+                "r": 2.5,
+                "magnet": true,
+                "stroke": "#4E68A3",
+                "strokeWidth": 2,
+                "fill": "#fff"
+              }
+            }
+          },
+          "left": {
+            "position": "left",
+            "attrs": {
+              "circle": {
+                "r": 2.5,
+                "magnet": true,
+                "stroke": "#4E68A3",
+                "strokeWidth": 2,
+                "fill": "#fff"
+              }
+            }
+          }
+        },
+        "items": [
+          {
+            "id": "top",
+            "group": "top"
+          },
+          {
+            "id": "right",
+            "group": "right"
+          },
+          {
+            "id": "bottom",
+            "group": "bottom"
+          },
+          {
+            "id": "left",
+            "group": "left"
+          }
+        ]
+      },
+      "id": "23642660-f9ed-403b-8f3b-f527e70161a0",
+      "zIndex": 10
+    },
+    {
+      "shape": "edge",
+      "attrs": {
+        "line": {
+          "strokeWidth": "2px"
+        }
+      },
+      "id": "c73b9999-d1ed-489e-aeb6-1a47409c643c",
+      "zIndex": 11,
+      "source": {
+        "cell": "81e87610-c749-4667-8382-00c62be30e2b",
+        "port": "right"
+      },
+      "target": {
+        "cell": "23642660-f9ed-403b-8f3b-f527e70161a0",
+        "port": "left"
+      }
+    }
+  ]
+}

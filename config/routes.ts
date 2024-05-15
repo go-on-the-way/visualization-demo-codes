@@ -13,6 +13,7 @@ export default [
       { path: '/home/fr-generator', component: '@/pages/fr-generator' },
       { path: '/home/scheduler', component: '@/pages/scheduler' },
       { path: '/home/three', component: '@/pages/three' },
+      { path: '/home/imove', component: '@/pages/imove' },
     ]
   },
   { path: '*', component: '@/pages/index' },

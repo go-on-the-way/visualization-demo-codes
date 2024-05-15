@@ -46,6 +46,9 @@ export const MySider = ()=>{
                 <Menu.Item key="7">
                     <NavLink to="/home/three">three</NavLink>
                 </Menu.Item>
+                <Menu.Item key="7">
+                    <NavLink to="/home/imove">imove</NavLink>
+                </Menu.Item>
             </Menu.ItemGroup>
         </SubMenu>
     </Menu>

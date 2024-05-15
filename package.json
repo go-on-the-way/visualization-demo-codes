@@ -3,6 +3,8 @@
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
+    "imove:init": "imove -i",
+    "imove": "imove -d",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
@@ -27,6 +29,7 @@
     "@formily/core": "^2.0.9",
     "@formily/react": "^2.0.9",
     "@handsontable/react": "^12.2.0",
+    "@imove/core": "^0.3.10",
     "@monaco-editor/react": "^4.4.6",
     "@react-pdf-viewer/core": "^3.9.0",
     "@react-pdf-viewer/default-layout": "^3.9.0",
@@ -45,12 +48,16 @@
     "react": "17.x",
     "react-dom": "17.x",
     "schema-form": "^0.0.1",
+    "styled-components": "^6.1.11",
     "three": "^0.148.0",
-    "umi": "^3.5.20"
+    "umi": "^3.5.20",
+    "lodash.get": "4.4.2",
+    "eventemitter3": "^4.0.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
+    "@imove/cli": "0.0.5",
     "@types/lodash": "^4.14.200",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",

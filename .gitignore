@@ -17,3 +17,6 @@
 /src/.umi-production
 /src/.umi-test
 /.env.local
+
+# imove
+# .cache
