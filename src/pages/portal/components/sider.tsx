@@ -46,8 +46,11 @@ export const MySider = ()=>{
                 <Menu.Item key="7">
                     <NavLink to="/home/three">three</NavLink>
                 </Menu.Item>
-                <Menu.Item key="7">
+                <Menu.Item key="8">
                     <NavLink to="/home/imove">imove</NavLink>
+                </Menu.Item>
+                <Menu.Item key="9">
+                    <NavLink to="/home/org-chart">组织架构图demo</NavLink>
                 </Menu.Item>
             </Menu.ItemGroup>
         </SubMenu>

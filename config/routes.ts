@@ -14,6 +14,7 @@ export default [
       { path: '/home/scheduler', component: '@/pages/scheduler' },
       { path: '/home/three', component: '@/pages/three' },
       { path: '/home/imove', component: '@/pages/imove' },
+      { path: '/home/org-chart', component: '@/pages/org-chart' },
     ]
   },
   { path: '*', component: '@/pages/index' },
