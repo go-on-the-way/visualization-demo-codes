@@ -15,6 +15,7 @@ export default [
       { path: '/home/three', component: '@/pages/three' },
       { path: '/home/imove', component: '@/pages/imove' },
       { path: '/home/org-chart', component: '@/pages/org-chart' },
+      { path: '/home/org-chart-g6', component: '@/pages/org-chart-g6' },
     ]
   },
   { path: '*', component: '@/pages/index' },
